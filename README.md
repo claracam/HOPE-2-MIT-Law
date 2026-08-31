@@ -21,6 +21,7 @@ The basic loop is:
 - [`prompt.md`](prompt.md) - kickoff instructions to give your agent.
 - [`03-SPRINT.md`](03-SPRINT.md) - the durable project contract, plan, status, and decision record.
 - [`04-QUARTET-REVIEW-PROMPTS.txt`](04-QUARTET-REVIEW-PROMPTS.txt) - fresh-agent prompts for reviewer, breaker, and final verifier roles.
+- [`examples/`](examples/) - three filled sprint examples for writing, website review, and public-data cleanup projects.
 - `context/` - source material the agent is authorized to use.
 - `output/` - the project deliverable.
 - `evidence/` - test output, screenshots, and other proof.
