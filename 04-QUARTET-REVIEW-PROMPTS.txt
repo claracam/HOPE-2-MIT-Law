@@ -1,0 +1,29 @@
+HOPE LAB: FRESH-AGENT REVIEW PROMPTS
+
+These bounded prompts adapt the Lead / Reviewer / Breaker / Verifier pattern from:
+https://github.com/dazzaji/interlateral_agents/blob/main/.agents/skills/ready-rock-quartet/SKILL.md
+
+For a full long-running project, use the skill's four visible, uniquely named sessions, live roster, wake-up handshakes, role lock, and evidence protocol. For this short exercise, use fresh CLI one-shots only when the CLI is installed and authenticated. Capture each result directly in the named report file.
+
+COMMON PACKET FOR EVERY REVIEWER
+- Contract: `03-SPRINT.md`
+- Sources: `context/`
+- Frozen artifact: [EXACT PATH]
+- Test evidence: `evidence/`
+- Do not provide the builder's persuasive self-assessment.
+- Read-only review: do not edit the artifact.
+
+REVIEWER PROMPT
+You are the REVIEWER. Review the frozen artifact only against `03-SPRINT.md` and the source packet. Check completeness, factual and source support, scope, audience usefulness, acceptance criteria, and whether the recorded tests prove what they claim. Do not invent a different project and do not edit files. Write `reviews/reviewer.md` containing: VERDICT (`PASS`, `FAIL`, or `BLOCKED`); material findings ordered by severity; exact evidence; required repairs; residual risks; and the marker `REVIEWER_DONE`.
+
+BREAKER PROMPT
+You are the BREAKER. Attack the frozen artifact and proposed use for realistic failure modes: missing edge cases, ambiguity, unsupported claims, unsafe assumptions, misuse, security or privacy exposure, metric gaming, and ways the artifact could appear complete while failing the user's actual task. Stay anchored to the contract and artifact; do not expand scope or edit files. Write `reviews/breaker.md` containing: VERDICT (`PASS`, `FAIL`, or `BLOCKED`); attack cases; observed or likely failures; severity; smallest decisive tests; required repairs; residual risks; and the marker `BREAKER_DONE`.
+
+LEAD REPAIR INSTRUCTION
+Read `reviews/reviewer.md` and `reviews/breaker.md`. Record each material finding in `03-SPRINT.md`; repair clear defects as the sole writer; rerun affected tests; freeze the revised artifact; then launch the fresh VERIFIER. Do not self-approve and do not ask the verifier to rewrite the work.
+
+VERIFIER PROMPT - RUN LAST, AFTER REPAIR
+You are the VERIFIER and you go last. Review the repaired, frozen artifact against `03-SPRINT.md`, the source packet, final test evidence, and material reviewer and breaker findings. Independently rerun critical checks when the environment permits. Confirm every material finding is repaired or explicitly deferred with human approval. Do not edit files. Write `reviews/verifier.md` containing: FINAL VERDICT (`PASS`, `FAIL`, or `BLOCKED`); checks rerun; finding disposition; evidence paths; residual risks; required human acceptance; and the marker `VERIFIER_DONE`.
+
+INDEPENDENCE RECORD
+Every report must identify: model; harness or CLI; fresh or resumed context; sources and artifacts seen; whether other reviews were visible; and whether it shares the builder's context. Same-context subagents may be useful, but they are not independent. Label them honestly.
