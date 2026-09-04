@@ -1,4 +1,12 @@
-# HOPE Lab Test 01
+# HOPE Lab Exercises
+
+## Current Session Materials
+
+HOPE Test 02 student materials are available in [`test-02/`](test-02/):
+
+- [Copy/paste prompts](test-02/PROMPTS.md)
+- [Slides (PDF)](test-02/HOPE-TEST-02.pdf)
+- [Slides (PowerPoint)](test-02/HOPE-TEST-02.pptx)
 
 This repository is a compact exercise for turning a broad objective into a managed, agent-ready project. It follows the operating pattern in Dazza Greenwood's [Overnight Cookbook](https://github.com/dazzaji/interlateral_agents/blob/main/docs/overnight-cookbook.md).
 
