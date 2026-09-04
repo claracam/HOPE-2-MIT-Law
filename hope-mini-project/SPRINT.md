@@ -52,10 +52,11 @@ Turn the messy event notes below into a clear, friendly, one-page participant gu
 
 ## Current Status
 
-`PARTICIPANT-GUIDE.md` drafted from Source Facts only. `CHECKS.md` created — all 4 Success Tests pass. Awaiting human `ACCEPT` or `REVISE` decision on the guide. No human acceptance has been claimed.
+`PARTICIPANT-GUIDE.md` accepted by human on 2026-09-04. All 4 Success Tests passed (see `CHECKS.md`). Sprint complete.
 
 ## Human Decision Log
 
 | Date | Decision | Notes |
 |------|----------|-------|
 | 2026-09-04 | CONTINUE | Approved drafting `PARTICIPANT-GUIDE.md` per the proposed plan/tests. |
+| 2026-09-04 | ACCEPT | Human reviewed `PARTICIPANT-GUIDE.md` and accepted it as final. |
