@@ -52,10 +52,10 @@ Turn the messy event notes below into a clear, friendly, one-page participant gu
 
 ## Current Status
 
-`SPRINT.md` drafted. Awaiting human decision (`CONTINUE`, `REVISE`, or `STOP`) before drafting `PARTICIPANT-GUIDE.md`. No guide has been written yet.
+`PARTICIPANT-GUIDE.md` drafted from Source Facts only. `CHECKS.md` created — all 4 Success Tests pass. Awaiting human `ACCEPT` or `REVISE` decision on the guide. No human acceptance has been claimed.
 
 ## Human Decision Log
 
 | Date | Decision | Notes |
 |------|----------|-------|
-| | | |
+| 2026-09-04 | CONTINUE | Approved drafting `PARTICIPANT-GUIDE.md` per the proposed plan/tests. |
